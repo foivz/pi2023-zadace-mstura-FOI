@@ -9,9 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EV_K {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class Povijest : Form {
+        public Povijest() {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            EvidencijaPrisustva ep = new EvidencijaPrisustva();
+
+            Hide();
+            ep.ShowDialog();
+            Close();
         }
     }
 }
