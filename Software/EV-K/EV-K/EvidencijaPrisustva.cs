@@ -27,6 +27,8 @@ namespace EV_K {
         }
 
         private void EvidencijaPrisustva_Load(object sender, EventArgs e) {
+            // TODO: This line of code loads data into the 'iPS23_mstura21DataSet.Odsutstvo' table. You can move, or remove it, as needed.
+            this.odsutstvoTableAdapter.Fill(this.iPS23_mstura21DataSet.Odsutstvo);
 
         }
 
@@ -35,6 +37,19 @@ namespace EV_K {
             Hide();
             povijest.ShowDialog();
             Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {
+            
+
+        }
+
+        private void label6_Click(object sender, EventArgs e) {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e) {
+
         }
     }
 }

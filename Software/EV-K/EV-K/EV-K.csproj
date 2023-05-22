@@ -52,6 +52,11 @@
     <Compile Include="EvidencijaPrisustva.Designer.cs">
       <DependentUpon>EvidencijaPrisustva.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPS23_mstura21DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IPS23_mstura21DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\Djelatnik.cs" />
     <Compile Include="Models\Zaposlenik.cs" />
     <Compile Include="Povijest.cs">
@@ -77,6 +82,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="IPS23_mstura21DataSet.xsc">
+      <DependentUpon>IPS23_mstura21DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IPS23_mstura21DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IPS23_mstura21DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IPS23_mstura21DataSet.xss">
+      <DependentUpon>IPS23_mstura21DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
