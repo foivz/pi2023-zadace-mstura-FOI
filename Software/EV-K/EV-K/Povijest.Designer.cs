@@ -23,19 +23,19 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvZahtjevi = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvZahtjevi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 361);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvZahtjevi.Location = new System.Drawing.Point(29, 58);
+            this.dgvZahtjevi.Name = "dgvZahtjevi";
+            this.dgvZahtjevi.Size = new System.Drawing.Size(748, 361);
+            this.dgvZahtjevi.TabIndex = 0;
             // 
             // label1
             // 
@@ -64,10 +64,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvZahtjevi);
             this.Name = "Povijest";
             this.Text = "Povijest";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,7 +75,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvZahtjevi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
     }

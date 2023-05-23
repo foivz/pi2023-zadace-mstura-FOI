@@ -13,9 +13,10 @@ namespace EV_K {
         /// </summary>
         [STAThread]
         static void Main() {
+            DB.SetConfiguration("IPS23_mstura21", "mstura21", "mS_%fEw:");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DB.SetConfiguration("IPS23_mstura21", "mstura21", "mS_%fEw:");
+            
             Application.Run(new EvidencijaPrisustva());
         }
     }

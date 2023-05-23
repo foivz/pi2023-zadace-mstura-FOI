@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EV_K.Models;
+using EV_K.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +15,13 @@ namespace EV_K {
         public Povijest() {
             InitializeComponent();
         }
-
+        private void Povijest_Load(object sender, EventArgs e) {
+            ShowZahtjevi();
+        }
+        private void ShowZahtjevi() {
+            List<Zahtjev> zahtjevi = ZahtjevRepository.GetZahtjev();
+            dgvZahtjevi.DataSource = zahtjevi;
+        }
         private void button1_Click(object sender, EventArgs e) {
             EvidencijaPrisustva ep = new EvidencijaPrisustva();
 
