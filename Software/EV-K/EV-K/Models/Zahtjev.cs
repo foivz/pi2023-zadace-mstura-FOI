@@ -11,6 +11,7 @@ namespace EV_K.Models {
         public string DatumOd { get; set; }
         public string DatumDo { get; set; }
         public string Razlog { get; set; }
+        public string Status { get; set; }
         public int FK_Oib { get; set; }
     }
 }

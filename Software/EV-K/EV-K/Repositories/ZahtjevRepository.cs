@@ -30,6 +30,7 @@ namespace EV_K.Repositories {
             string datumOd = reader["DatumOd"].ToString();
             string datumDo = reader["DatumDo"].ToString();
             string razlog = reader["Razlog"].ToString();
+            string status = reader["Status"].ToString();
             int zaposlenik = int.Parse(reader["FK_Oib"].ToString());
             var zahtjev = new Zahtjev {
 
@@ -38,6 +39,7 @@ namespace EV_K.Repositories {
                 DatumOd = datumOd,
                 DatumDo = datumDo,
                 Razlog = razlog,
+                Status = status,
                 FK_Oib = zaposlenik
             };
             return zahtjev;

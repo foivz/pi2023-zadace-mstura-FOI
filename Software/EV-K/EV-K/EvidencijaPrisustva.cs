@@ -1,4 +1,5 @@
-﻿using EV_K.Restrictions;
+﻿using EV_K.Repositories;
+using EV_K.Restrictions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,10 +50,25 @@ namespace EV_K {
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e) {
 
         }
+        static int RandomNumber(int min, int max) {
+            Random random = new Random(); return random.Next(min, max);
 
+        }
         public void button1_Click(object sender, EventArgs e) {
             var restriction = new Restrictions.Restrictions();
-            restriction.InputCheck(comboBox1.Text, textBox1.Text);
+            string tip = comboBox1.Text;
+            string razlog = textBox1.Text;
+            
+            string datumod = dateTimePicker1.Value.ToString("dd-M-yyyy");
+            string datumdo = dateTimePicker2.Value.ToString("dd-M-yyyy");
+            int random = RandomNumber(1, 1000000000);
+            if (restriction.InputCheck(comboBox1.Text, textBox1.Text) == false) {
+            DodavanjeZahtjeva.DodajZahtjev(random, datumod, datumdo, tip, razlog);
+            } else {
+                MessageBox.Show("Niste unijeli nešto", "Problem nečega", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+      
     }
 }

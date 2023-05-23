@@ -31,6 +31,7 @@
             // 
             // dgvZahtjevi
             // 
+            this.dgvZahtjevi.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZahtjevi.Location = new System.Drawing.Point(30, 55);
             this.dgvZahtjevi.Name = "dgvZahtjevi";
@@ -41,8 +42,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(33, 9);
+            this.label1.Location = new System.Drawing.Point(2, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 37);
             this.label1.TabIndex = 1;
@@ -50,24 +52,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(282, 9);
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Location = new System.Drawing.Point(219, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Evidencija";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Povijest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvZahtjevi);
             this.Name = "Povijest";
             this.Text = "Povijest";
+            this.Load += new System.EventHandler(this.Povijest_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

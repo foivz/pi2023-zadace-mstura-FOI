@@ -38,6 +38,8 @@ namespace EV_K {
 
         }
 
-       
+        private void Povijest_Load_1(object sender, EventArgs e) {
+            ShowZahtjevi();
+        }
     }
 }

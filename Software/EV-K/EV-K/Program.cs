@@ -17,7 +17,7 @@ namespace EV_K {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             DB.SetConfiguration("IPS23_mstura21", "mstura21", "mS_%fEw:");
-            Application.Run(new EvidencijaPrisustva());
+            Application.Run(new Prijava());
         }
     }
 }
