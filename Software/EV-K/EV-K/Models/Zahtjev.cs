@@ -8,7 +8,9 @@ namespace EV_K.Models {
     public class Zahtjev {
         public int Id { get; set; }
         public string Tip { get; set; }
-        public string Date { get; set; }
+        public string DatumOd { get; set; }
+        public string DatumDo { get; set; }
         public string Razlog { get; set; }
+        public int FK_Oib { get; set; }
     }
 }

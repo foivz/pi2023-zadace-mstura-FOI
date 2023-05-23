@@ -32,10 +32,11 @@
             // dgvZahtjevi
             // 
             this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvZahtjevi.Location = new System.Drawing.Point(29, 58);
+            this.dgvZahtjevi.Location = new System.Drawing.Point(30, 55);
             this.dgvZahtjevi.Name = "dgvZahtjevi";
-            this.dgvZahtjevi.Size = new System.Drawing.Size(748, 361);
+            this.dgvZahtjevi.Size = new System.Drawing.Size(746, 370);
             this.dgvZahtjevi.TabIndex = 0;
+            this.dgvZahtjevi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvZahtjevi_CellContentClick);
             // 
             // label1
             // 
@@ -78,5 +79,13 @@
         private System.Windows.Forms.DataGridView dgvZahtjevi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+       
+      
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datumOdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datumDoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razlogDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKOibDataGridViewTextBoxColumn;
     }
 }
