@@ -33,13 +33,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.iPS23_mstura21DataSet = new EV_K.IPS23_mstura21DataSet();
+           
             this.odsutstvoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.odsutstvoTableAdapter = new EV_K.IPS23_mstura21DataSetTableAdapters.OdsutstvoTableAdapter();
+            
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.iPS23_mstura21DataSet)).BeginInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.odsutstvoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,6 +122,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Pošalji";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -135,17 +136,16 @@
             // 
             // iPS23_mstura21DataSet
             // 
-            this.iPS23_mstura21DataSet.DataSetName = "IPS23_mstura21DataSet";
-            this.iPS23_mstura21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // odsutstvoBindingSource
             // 
             this.odsutstvoBindingSource.DataMember = "Odsutstvo";
-            this.odsutstvoBindingSource.DataSource = this.iPS23_mstura21DataSet;
+            
             // 
             // odsutstvoTableAdapter
             // 
-            this.odsutstvoTableAdapter.ClearBeforeFill = true;
+            
             // 
             // label5
             // 
@@ -192,8 +192,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EvidencijaPrisustva";
             this.Text = "EvidencijaPrisustva";
-            this.Load += new System.EventHandler(this.EvidencijaPrisustva_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.iPS23_mstura21DataSet)).EndInit();
+   
             ((System.ComponentModel.ISupportInitialize)(this.odsutstvoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -211,9 +210,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private IPS23_mstura21DataSet iPS23_mstura21DataSet;
+       
         private System.Windows.Forms.BindingSource odsutstvoBindingSource;
-        private IPS23_mstura21DataSetTableAdapters.OdsutstvoTableAdapter odsutstvoTableAdapter;
+        
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;

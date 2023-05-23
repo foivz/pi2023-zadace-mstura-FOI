@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EV_K.Models {
-    internal class Djelatnik : Zaposlenik {
+    public class Djelatnik : Zaposlenik {
         public string email { get; set; }
         public string lozinka { get; set; }    
 

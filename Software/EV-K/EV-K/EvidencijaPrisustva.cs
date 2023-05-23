@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EV_K.Restrictions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace EV_K {
     public partial class EvidencijaPrisustva : Form {
         public EvidencijaPrisustva() {
             InitializeComponent();
         }
-
+       
         private void label1_Click(object sender, EventArgs e) {
 
         }
@@ -26,11 +28,7 @@ namespace EV_K {
 
         }
 
-        private void EvidencijaPrisustva_Load(object sender, EventArgs e) {
-            // TODO: This line of code loads data into the 'iPS23_mstura21DataSet.Odsutstvo' table. You can move, or remove it, as needed.
-            this.odsutstvoTableAdapter.Fill(this.iPS23_mstura21DataSet.Odsutstvo);
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e) {
             Povijest povijest = new Povijest();
@@ -50,6 +48,11 @@ namespace EV_K {
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e) {
 
+        }
+
+        public void button1_Click(object sender, EventArgs e) {
+            var restriction = new Restrictions.Restrictions();
+            restriction.InputCheck(comboBox1.Text, textBox1.Text);
         }
     }
 }
