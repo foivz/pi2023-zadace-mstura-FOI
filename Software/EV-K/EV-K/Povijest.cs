@@ -41,5 +41,27 @@ namespace EV_K {
         private void Povijest_Load_1(object sender, EventArgs e) {
             ShowZahtjevi();
         }
+
+        private void label2_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            Zahtjev selectedZahtjev = dgvZahtjevi.CurrentRow.DataBoundItem as Zahtjev;
+            if(selectedZahtjev != null ) {
+                PromjenaEvidencije promjenaEvidencije = new PromjenaEvidencije(selectedZahtjev);
+                promjenaEvidencije.ShowDialog();
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            this.Refresh();
+            Povijest ep = new Povijest();
+
+            Hide();
+            ep.ShowDialog();
+            Close();
+        }
     }
 }

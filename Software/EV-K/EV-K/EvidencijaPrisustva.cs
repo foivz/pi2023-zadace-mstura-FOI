@@ -69,6 +69,32 @@ namespace EV_K {
             }
         }
 
-      
+        private void EvidencijaPrisustva_Load(object sender, EventArgs e) {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e) {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e) {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void testbox_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void label8_Tick(object sender, EventArgs e) {
+            label8.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }
