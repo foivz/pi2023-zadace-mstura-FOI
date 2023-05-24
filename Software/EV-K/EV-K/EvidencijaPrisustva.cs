@@ -96,5 +96,9 @@ namespace EV_K {
         private void label8_Tick(object sender, EventArgs e) {
             label8.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void timer2_Tick(object sender, EventArgs e) {
+           
+        }
     }
 }
