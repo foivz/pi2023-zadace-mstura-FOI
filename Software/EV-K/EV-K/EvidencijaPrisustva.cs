@@ -70,7 +70,7 @@ namespace EV_K {
         }
 
         private void EvidencijaPrisustva_Load(object sender, EventArgs e) {
-
+            timer3.Start();
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e) {
@@ -99,6 +99,10 @@ namespace EV_K {
 
         private void timer2_Tick(object sender, EventArgs e) {
            
+        }
+
+        private void timer3_Tick(object sender, EventArgs e) {
+            label8.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

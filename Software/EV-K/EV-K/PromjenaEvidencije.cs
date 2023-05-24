@@ -94,5 +94,11 @@ namespace EV_K {
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) {
 
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            int id = zahtjev.Id;
+            Brisanje.DeleteZahtjev(id);
+            Close();
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace EV_K.Restrictions {
                 } else {
                     pro2 = false;
                 }
-            return (pro1 && pro2);
+            return (pro1 || pro2);
         }
     }
 }
