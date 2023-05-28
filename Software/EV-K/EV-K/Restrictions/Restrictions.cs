@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//
 namespace EV_K.Restrictions {
     public class Restrictions {
         public bool InputCheck(string tip, string razlog) {
